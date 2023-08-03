@@ -1,0 +1,993 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Mon May 29 2023 18:07:42 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="6474d7ac9b3210bd809dbaf1" data-wf-site="641dd6de9511710d3d9b3089">
+<head>
+  <meta charset="utf-8">
+  <title>Nutrien Product Redesign</title>
+  <meta content="Case study to redesign a digital customer experience platform with a design-led process to improve user adoption, engagement, and satisfaction." name="description">
+  <meta content="Nutrien Product Redesign" property="og:title">
+  <meta content="Case study to redesign a digital customer experience platform with a design-led process to improve user adoption, engagement, and satisfaction." property="og:description">
+  <meta content="Nutrien Product Redesign" property="twitter:title">
+  <meta content="Case study to redesign a digital customer experience platform with a design-led process to improve user adoption, engagement, and satisfaction." property="twitter:description">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="../css/carriemahdesigns-2023.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic", "Varela:400", "Poppins:200,300,regular,500,600,700,800"]
+        }
+      });
+    </script>
+  <script type="text/javascript">
+      ! function(o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+      }(window, document);
+    </script>
+  <link href="../images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="../images/webclip.jpg" rel="apple-touch-icon">
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+  <script>
+      const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+        direction: 'vertical', // vertical, horizontal
+        gestureDirection: 'vertical', // vertical, horizontal, both
+        smooth: true,
+        mouseMultiplier: 1,
+        smoothTouch: false,
+        touchMultiplier: 2,
+        infinite: false,
+      })
+      //get scroll value
+      lenis.on('scroll', ({
+        scroll,
+        limit,
+        velocity,
+        direction,
+        progress
+      }) => {
+        console.log({
+          scroll,
+          limit,
+          velocity,
+          direction,
+          progress
+        })
+      })
+      function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+      }
+      requestAnimationFrame(raf)
+    </script>
+</head>
+<body class="body">
+  <div class="global">
+    <div class="html w-embed">
+      <style>
+          .cursor {
+            pointer-events: none;
+          }
+          body:hover .cursor {
+            opacity: 100%;
+          }
+          .hero_wrap {
+            backdrop-filter: blur(2em);
+            -webkit-backdrop-filter: blur(2em);
+          }
+        </style>
+    </div>
+    <div class="main-wrapper">
+      <div data-collapse="all" data-animation="over-right" data-duration="600" data-easing="ease-in-cubic" data-easing2="ease-in-quart" data-w-id="1bf9f5ab-3c3d-9a50-84d9-6a6eb80f8765" role="banner" class="_001-nav w-nav">
+        <div class="nav-container w-container">
+          <a href="../index.html" data-w-id="1bf9f5ab-3c3d-9a50-84d9-6a6eb80f8767" class="brand w-nav-brand"><img src="../images/mah-carrie_logo.svg" loading="lazy" alt="" class="icon-logo"></a>
+          <div class="spacer"></div>
+          <nav role="navigation" class="big-overlay test w-nav-menu">
+            <div class="off-canvas-wrapper">
+              <div class="off-main-links">
+                 <a href="../about.html" data-w-id="88bf3f54-4e13-4fcf-50dc-8b3eed0e033f" class="global-nav-button w-inline-block">
+                  <div class="nav-link tablet">About</div>
+                  <div class="bottom-line"></div>
+                </a>
+                <a href="../index.html#list-projects" data-w-id="88bf3f54-4e13-4fcf-50dc-8b3eed0e033f" class="global-nav-button w-inline-block">
+                  <div class="nav-link tablet">Work</div>
+                  <div class="bottom-line"></div>
+                </a>
+                <a href="../experiments/projects.html" data-w-id="88bf3f54-4e13-4fcf-50dc-8b3eed0e033f" class="global-nav-button w-inline-block">
+                  <div class="nav-link tablet">Projects</div>
+                  <div class="bottom-line"></div>
+                </a>
+                <a href="https://www.figma.com/proto/MgdYF8ttPsYpTmj9vtXxMv/👩🏻‍💻-Carrie-Mah-Product-Design-Portfolio?page-id=0%3A1&type=design&node-id=8-4084&viewport=1258%2C-4%2C0.07&scaling=contain&starting-point-node-id=8%3A4084&show-proto-sidebar=1" data-w-id="88bf3f54-4e13-4fcf-50dc-8b3eed0e033f" target="_blank" class="global-nav-button w-inline-block">
+                  <div class="nav-link tablet">Portfolio</div>
+                  <div class="bottom-line"></div>
+                </a>
+                <a href="../documents/mah-carrie_resume-general.pdf" data-w-id="88bf3f54-4e13-4fcf-50dc-8b3eed0e033f" target="_blank" class="global-nav-button w-inline-block">
+                  <div class="nav-link tablet">Resume</div>
+                  <div class="bottom-line"></div>
+                </a>
+              </div>
+              <div class="off-other-column">
+                <div class="connect-wrapper">
+                  <div class="heading-4">Let&#x27;s connect</div>
+                  <div class="social-wrapper">
+                    <a href="http://linkedin.com/in/carriemah/" target="_blank" class="icon-wrapper social w-inline-block">
+                      <div data-w-id="e41e7940-d3b6-e5cd-ada4-c84124bbf5f8" class="icon-wrapper"><img src="../images/Outline_Brands-Linkedin.svg" loading="lazy" alt="" class="icon"><img src="../images/Shadow_Brands-alt.svg" loading="lazy" alt="" class="icon-shadow"></div>
+                    </a>
+                    <a href="https://twitter.com/carriem_designs" target="_blank" class="icon-wrapper social w-inline-block">
+                      <div data-w-id="fde49bc9-b12d-b0a2-4720-d322b00babf1" class="icon-wrapper"><img src="../images/Outline_Brands-Twitter.svg" loading="lazy" alt="" class="icon"><img src="../images/Shadow_Brands-alt.svg" loading="lazy" alt="" class="icon-shadow"></div>
+                    </a>
+                    <a href="https://medium.com/@carriem.designs" target="_blank" class="icon-wrapper social w-inline-block">
+                      <div data-w-id="e41e7940-d3b6-e5cd-ada4-c84124bbf5fc" class="icon-wrapper"><img src="../images/Outline_Brands-Medium.svg" loading="lazy" alt="" class="icon"><img src="../images/Shadow_Brands-alt.svg" loading="lazy" alt="" class="icon-shadow"></div>
+                    </a>
+                    <a href="https://instagram.com/carriem.designs" target="_blank" class="icon-wrapper social w-inline-block">
+                      <div data-w-id="e41e7940-d3b6-e5cd-ada4-c84124bbf600" class="icon-wrapper"><img src="../images/Outline_Brands-Instagram.svg" loading="lazy" alt="" class="icon"><img src="../images/Shadow_Brands-alt.svg" loading="lazy" alt="" class="icon-shadow"></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="connect-wrapper">
+                  <div class="heading-4">Let&#x27;s chat!</div>
+                  <div data-w-id="e41e7940-d3b6-e5cd-ada4-c84124bbf606" class="btn-wrapper connect">
+                    <div class="btn-shadow connect">
+                      <a href="mailto:mah.carrie@gmail.com?subject=Hi%20from%20your%20website" class="button connect w-button">Send an email</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div class="nav-tab-wrapper">
+            <a href="../about.html" data-w-id="33031e52-4ca5-f897-0a6f-e0cd2f040256" class="global-nav-button small w-inline-block">
+              <div class="nav-link small">About</div>
+              <div class="bottom-line on-white"></div>
+            </a>
+            <a href="../index.html#list-projects" data-w-id="8ca93253-82e4-0bd5-27f3-36c819465ca7" class="global-nav-button small w-inline-block">
+              <div class="nav-link small">Work</div>
+              <div class="bottom-line on-white"></div>
+            </a>
+            <a href="../experiments/projects.html" data-w-id="6b022248-ccff-b741-eb7f-49782f599a86" class="global-nav-button small w-inline-block">
+              <div class="nav-link small">Projects</div>
+              <div class="bottom-line on-white"></div>
+            </a>
+            <a href="https://www.figma.com/proto/MgdYF8ttPsYpTmj9vtXxMv/👩🏻‍💻-Carrie-Mah-Product-Design-Portfolio?page-id=0%3A1&type=design&node-id=8-4084&viewport=1258%2C-4%2C0.07&scaling=contain&starting-point-node-id=8%3A4084&show-proto-sidebar=1" data-w-id="33031e52-4ca5-f897-0a6f-e0cd2f040256" target="_blank" class="global-nav-button small w-inline-block">
+              <div class="nav-link small">Portfolio</div>
+              <div class="bottom-line on-white"></div>
+            </a>
+            <a href="../documents/mah-carrie_resume-general.pdf" data-w-id="e599d6f1-d1f9-74c8-6bdd-4c5305910dca" target="_blank" class="global-nav-button small w-inline-block">
+              <div class="nav-link small">Resume</div>
+              <div class="bottom-line on-white"></div>
+            </a>
+          </div>
+          <div class="nav-btn-wrapper tablet w-nav-button">
+            <div class="hamburger-wrapper">
+              <div class="hamburger-top"></div>
+              <div class="hamburger-middle"></div>
+              <div class="hamburger-bottom"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="case_section intro-content">
+    <div class="case_grid w-container">
+      <div class="intro_wrapper"><img src="../images/image-133.png" loading="lazy" width="168.77420043945312" height="36" alt="" class="case-logo">
+        <h1 class="case_title">Nutrien Product Redesign</h1>
+        <div class="case-content_wrapper">
+          <div class="case_typography-lgbody">Redesigning a digital customer experience platform with a design-led process to improve user adoption, engagement, and satisfaction.</div>
+          <div class="case-tag_container">
+            <div class="case-tags">
+              <div class="case_typography-caption bold">Product Design</div>
+            </div>
+            <div class="case-tags">
+              <div class="case_typography-caption bold">UX Design</div>
+            </div>
+            <div class="case-tags">
+              <div class="case_typography-caption bold">UI Design</div>
+            </div>
+            <div class="case-tags">
+              <div class="case_typography-caption bold">Design System</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="case_section hero-content case-02">
+    <div class="case-img_wrapper hero">
+      <div class="case-img_container hero"><img src="../images/intro_01-hero_1.png" loading="lazy" alt="" class="case-img hero"></div>
+    </div>
+  </div>
+  <div class="case_section on-dark project-content">
+    <div class="case_container w-container">
+      <div class="case_grid sticky-title">
+        <div class="case_column left sticky">
+          <div class="content_wrapper">
+            <h2 class="case_typography-h2 on-dark">details</h2>
+          </div>
+        </div>
+        <div class="case_column right">
+          <div class="case-content_wrapper">
+            <div class="case-content_container">
+              <h3 class="case_typography-h3 on-dark">Duration</h3>
+              <div class="case_typography-lgbody on-dark">16 weeks</div>
+            </div>
+            <div class="case-content_container">
+              <h1 class="case_typography-h3 on-dark">Role</h1>
+              <div class="case_typography-lgbody on-dark">Product design, UX design, UI design, product management</div>
+            </div>
+            <div class="case-content_container">
+              <h1 class="case_typography-h3 on-dark">Team</h1>
+              <div class="case_typography-lgbody on-dark">UX Design Lead, Product Designer, Business Analysts, Frontend Developers, Product Manager, Technical Architects</div>
+            </div>
+            <div class="case-content_container">
+              <h1 class="case_typography-h3 on-dark">Tools</h1>
+              <div class="case_typography-lgbody on-dark">Figma, Material Design, Material UI</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="case_container w-container">
+      <div class="case_grid sticky-title">
+        <div class="case_column left sticky">
+          <div class="content_wrapper">
+            <h2 class="case_typography-h2 on-dark">project</h2>
+          </div>
+        </div>
+        <div class="case_column right">
+          <div class="case-content_wrapper">
+            <div class="case-content_container">
+              <h3 class="case_typography-h3 on-dark">Challenge</h3>
+              <div class="case_typography-lgbody on-dark">A merger left Nutrien running on two separate systems, leaving an outdated, chaotic, and fragmented user experience. Nutrien needed help creating a new foundation for a digital customer experience platform and enhancing the user experience.</div>
+            </div>
+            <div class="case-content_container">
+              <h1 class="case_typography-h3 on-dark">Summary</h1>
+              <div class="case_typography-lgbody on-dark">Nutrien, a multi-billion company, collaborated with small teams from IBM iX and Xerris, to design a responsive digital customer experience platform.<br><br>The team created the first iteration of a new platform which unified two legacy systems, simplified workflows, and addressed user’s needs. This platform empowers customers to stay on top of their business with up-to-date information and self-serve tools, so they can focus on growing their business.</div>
+            </div>
+            <div class="case-content_container">
+              <h1 class="case_typography-h3 on-dark">Contributions</h1>
+              <div class="case_typography-lgbody on-dark">As a Product Designer, I helped set the foundations to accelerate the design process. This includes creating the information architecture, envisioning a big picture wireframe, and co-leading a design system. I enhanced existing features, simplified processes with new features, and led initiatives to increase team productivity.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="case_section on-light overview-content">
+    <div class="case_container w-container">
+      <div class="case_grid title">
+        <div class="case_column left">
+          <div class="content_wrapper">
+            <h2 class="case_typography-h2">Overview</h2>
+          </div>
+        </div>
+        <div class="case_column right">
+          <div class="case-content_wrapper">
+            <div class="case-content_container">
+              <div class="case_typography-body">We leveraged user insights and a future-state vision from a digital customer experience strategy.</div>
+              <div data-w-id="5ff1c4be-0f40-6c90-1bb7-733d803af82c" class="case_secondary-btn-wrapper">
+                <div class="btn-shadow light">
+                  <a href="../works/nutrien-strategy.html" target="_blank" class="button case-simple w-button">View project</a>
+                </div>
+              </div>
+            </div>
+            <div class="case-content_container">
+              <div class="case_typography-body">We collaborated with sales, customer success, and stakeholders, who were sponsor users that worked with customers daily and represented their needs.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="case-img-full_wrapper"><img src="../images/intro_02a-approachvertical.png" loading="lazy" width="938" height="363" alt="" class="case-approach_img"></div>
+      <div class="case-img-full_wrapper tablet"><img src="../images/intro_02b-approachvertical_1.png" loading="lazy" width="938" height="363" srcset="../images/intro_02b-approachvertical_1-p-500.png 500w, ../images/intro_02b-approachvertical_1.png 862w" sizes="(max-width: 479px) 76vw, (max-width: 767px) 52vw, 100vw" alt="" class="case-approach_img"></div>
+    </div>
+    <div class="case_container w-container">
+      <div class="case_grid sticky-title">
+        <div class="case_column left sticky">
+          <div class="content_wrapper">
+            <h2 class="case_typography-h2">Approach</h2>
+          </div>
+        </div>
+        <div class="case_column right">
+          <div class="case-content_wrapper">
+            <div class="case-content_wrapper">
+              <div class="case-content_container">
+                <div class="case_typography-body">We approached this challenge in two phases:</div>
+              </div>
+              <div class="case-content_container sm">
+                <h3 class="case_typography-h3">Design: establishing foundations</h3>
+              </div>
+              <div class="case-content_container sm">
+                <h4 class="case_typography-h4">Validate requirements</h4>
+                <div class="case_typography-body">Understand user needs and legacy system features.</div>
+              </div>
+              <div class="case-content_container sm">
+                <h4 class="case_typography-h4">Define the information architecture</h4>
+                <div class="case_typography-body">Build a sitemap with new roadmap and existing legacy system features.</div>
+              </div>
+              <div class="case-content_container sm">
+                <h4 class="case_typography-h4">Ideate with wireframes</h4>
+                <div class="case_typography-body">Visualize the big-picture with design patterns, content, and navigation.</div>
+              </div>
+              <div class="case-content_container sm">
+                <h4 class="case_typography-h4">Refine designs</h4>
+                <div class="case_typography-body">Establish design principles and a visual design approach.</div>
+              </div>
+              <div class="case-content_container sm">
+                <h3 class="case_typography-h3">Delivery: enhancing experiences</h3>
+              </div>
+              <div class="case-content_container sm">
+                <h4 class="case_typography-h4">Explore ideas</h4>
+                <div class="case_typography-body">Sketch and wireframe ideas to address user needs and tasks.</div>
+              </div>
+              <div class="case-content_container sm">
+                <h4 class="case_typography-h4">Build prototypes</h4>
+                <div class="case_typography-body">Envision user flows with defined UI, interactions, and content design.</div>
+              </div>
+              <div class="case-content_container sm">
+                <h4 class="case_typography-h4">Evaluate feedback</h4>
+                <div class="case_typography-body">Test sponsor users with guerrilla testing to determine task effectiveness.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="case_grid sticky-title">
+        <div class="case_column left sticky">
+          <div class="content_wrapper">
+            <h2 class="case_typography-h2">RESULTS</h2>
+          </div>
+        </div>
+        <div class="case_column right">
+          <div class="case-content_wrapper">
+            <div class="case-content_container">
+              <div class="case_typography-body">We used a design-led approach to build a new digital customer experience platform, increasing adoption, engagement, satisfaction, and business efficiency. Customers can manage their account, orders, and shipments with more control, visibility, and flexibility.</div>
+            </div>
+            <div class="case-content_container sm">
+              <h4 class="case_typography-h4">Bringing a user-centric vision to life by unifying two legacy systems with 5+ features</h4>
+              <div class="case_typography-body">Designing new visual standards with a design system adapted from Google Material Design to accelerate the design process and streamline development.</div>
+            </div>
+            <div class="case-content_container sm">
+              <h4 class="case_typography-h4">Continuous feedback generated business buy-in and user excitement</h4>
+              <div class="case_typography-body">Designs shared with customers, sponsor users, and stakeholders were positively received, increasing anticipation for the product’s release.</div>
+            </div>
+            <div class="case-content_container img-btn">
+              <div class="case-video_wrapper">
+                <div class="case-solution_phone">
+                  <div class="phone-mockup"><img src="../images/nutrien-app_warehouse-solution.gif" loading="lazy" alt="" class="phone-contents"><img src="../images/iphone12.svg" loading="lazy" alt="" class="phone-frame"></div><img src="../images/iphone-shape-shadow.svg" loading="lazy" alt="" class="phone-shadow">
+                </div>
+                <div class="case-solution_phone">
+                  <div class="phone-mockup"><img src="../images/nutrien-app_invoice-solution.gif" loading="lazy" alt="" class="phone-contents"><img src="../images/iphone12.svg" loading="lazy" alt="" class="phone-frame"></div><img src="../images/iphone-shape-shadow.svg" loading="lazy" alt="" class="phone-shadow">
+                </div>
+              </div>
+              <div data-w-id="d9d7c4a1-fb70-2fa0-36b7-fcfeb8efa746" class="case_secondary-btn-wrapper centre-on-mobile">
+                <div class="btn-shadow light">
+                  <a href="https://youtu.be/flDV0SsZ34g" target="_blank" class="button case-simple w-button">View video</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="case_section journey-content first">
+    <div class="case_container w-container">
+      <div class="case_grid sticky-title">
+        <div class="case_column left sticky">
+          <div class="content_wrapper">
+            <h2 class="case_typography-h2">design<br>principles</h2>
+          </div>
+        </div>
+        <div class="case_column right">
+          <div class="case-content_wrapper">
+            <div class="case-content_wrapper">
+              <div class="case-content_container sm">
+                <h3 class="case_typography-h3">Simple and clear</h3>
+                <div class="case_typography-body"><span class="case_typography-body-bold">Deliver relevant information to users when they want it.</span><br>We improved information discoverability, providing users a high-level overview before exploring detailed information.</div>
+              </div>
+              <div class="case-content_container sm">
+                <h3 class="case_typography-h3">Flexible and tailored</h3>
+                <div class="case_typography-body"><span class="case_typography-body-bold">Personalize the user experience, adapted to their needs.</span><br>With the ability to customize preferences, users can efficiently find and access the information they need.</div>
+              </div>
+              <div class="case-content_container sm">
+                <h3 class="case_typography-h3">Intuitive and seamless</h3>
+                <div class="case_typography-body"><span class="case_typography-body-bold">Provide a consistent experience with easy navigation.</span><br>We created a design language so users can quickly learn and effectively complete their tasks.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-w-id="4015cf13-3ce3-b822-e768-cab11215df87" class="case_section journey-content">
+    <div class="case_container w-container">
+      <div class="case_grid title no-col">
+        <div class="content_wrapper">
+          <h2 class="case_typography-h2">design phase</h2>
+        </div>
+      </div>
+    </div>
+    <div class="case_container w-container">
+      <div class="case_grid title">
+        <div class="case_column left">
+          <div class="case-content_container sm">
+            <h3 class="case_typography-h3">Needs assessment</h3>
+            <h4 class="case_typography-h4">Gathering requirements</h4>
+          </div>
+        </div>
+        <div class="case_column right">
+          <div class="case-content_wrapper">
+            <div class="case-content_container sm">
+              <div class="case_typography-lgbody">I helped the Business Analyst identify features for the Minimum Delightful Experience (MDE) vision by assessing legacy system features and roadmap initiatives from the digital customer experience strategy.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="case_container journey w-container">
+      <div class="case_grid journey-sticky">
+        <div class="case_column left journey-sticky">
+          <div class="content_wrapper journey-sticky">
+            <div class="case_typography-body">Our focus was creating a personalized platform where customers have on-the-go access to Nutrien’s services, including tracking orders, shipments, and inventory.<br></div>
+            <div class="case_typography-body">Based on legacy system usage metrics, we identified three top features to include for MDE:<br></div>
+            <ul role="list" class="list">
+              <li class="case_typography-body">Orders and shipments (32%)</li>
+              <li class="case_typography-body">Invoices (18%)</li>
+              <li class="case_typography-body">Account Status &amp; receivables (10%)</li>
+            </ul>
+          </div>
+          <div class="case-img-collection_wrapper-tablet">
+            <div class="case-img-collection_container grid single case-02_journey-01">
+              <div id="w-node-fff93db4-7a2b-23e8-8ecc-e39e1c196443-809dbaf1" class="case-img_block full"><img src="../images/journey_01a-analysis.jpg" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 57vw, (max-width: 991px) 49vw, 100vw" srcset="../images/journey_01a-analysis-p-500.jpg 500w, ../images/journey_01a-analysis-p-800.jpg 800w, ../images/journey_01a-analysis-p-1080.jpg 1080w, ../images/journey_01a-analysis-p-1600.jpg 1600w, ../images/journey_01a-analysis.jpg 1800w" alt="" class="case-img_journey outline"></div>
+              <div id="w-node-fff93db4-7a2b-23e8-8ecc-e39e1c196445-809dbaf1" class="case-img_block full"><img src="../images/journey_01b-roadmap.jpg" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 28vw, (max-width: 991px) 24vw, 100vw" srcset="../images/journey_01b-roadmap-p-500.jpg 500w, ../images/journey_01b-roadmap-p-800.jpg 800w, ../images/journey_01b-roadmap.jpg 910w" alt="" class="case-img_journey outline"></div>
+              <div id="w-node-fff93db4-7a2b-23e8-8ecc-e39e1c196447-809dbaf1" class="case-img_block xl"><img src="../images/journey_01c-personas.jpg" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 51vw, (max-width: 991px) 47vw, 100vw" srcset="../images/journey_01c-personas-p-500.jpg 500w, ../images/journey_01c-personas-p-800.jpg 800w, ../images/journey_01c-personas-p-1080.jpg 1080w, ../images/journey_01c-personas.jpg 1317w" alt="" class="case-img_journey outline"></div>
+            </div>
+          </div>
+        </div>
+        <div class="case_column right journey-sticky">
+          <div class="case-img-collection_wrapper single">
+            <div class="case-img-collection_container grid single">
+              <div id="w-node-fb8e144d-be7c-f252-5771-3bff1591cfcc-809dbaf1" class="case-img_block full"><img src="../images/journey_01a-analysis.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+              <div id="w-node-fb8e144d-be7c-f252-5771-3bff1591cfce-809dbaf1" class="case-img_block full"><img src="../images/journey_01b-roadmap.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+              <div id="w-node-fb8e144d-be7c-f252-5771-3bff1591cfd0-809dbaf1" class="case-img_block xl"><img src="../images/journey_01c-personas.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-w-id="de37ab04-42cc-1449-8caa-19dc2b8359ad" class="case_section journey-content">
+    <div class="case_container w-container">
+      <div class="case_grid title">
+        <div class="case_column left">
+          <div class="case-content_container sm">
+            <h3 class="case_typography-h3">Information architecture</h3>
+            <h4 class="case_typography-h4">Building a framework</h4>
+          </div>
+        </div>
+        <div class="case_column right">
+          <div class="case-content_wrapper">
+            <div class="case-content_container sm">
+              <div class="case_typography-lgbody">To validate research insights from the digital customer experience strategy and assumptions from the legacy systems, I created two sitemaps for initial and subsequent MDE releases.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="case_container journey w-container">
+      <div class="case_grid journey-sticky">
+        <div class="case_column left journey-sticky">
+          <div class="content_wrapper journey-sticky">
+            <div class="case_typography-body">The sitemaps represented the customer-facing experience and a corresponding sales-facing experience.<br></div>
+            <div class="case_typography-body">We included features customers requested in the roadmap, frequently used in the legacy systems, and recommended by user sponsors for future releases.<br></div>
+          </div>
+          <div class="case-img-collection_wrapper-tablet">
+            <div class="case-img-collection_container grid single case-02_journey-02">
+              <div id="w-node-e7fd23ec-91fa-9d02-df26-ae6294e75dad-809dbaf1" class="case-img_block full"><img src="../images/journey_02a-sitemap.jpg" loading="lazy" sizes="(max-width: 767px) 57vw, (max-width: 991px) 49vw, 100vw" srcset="../images/journey_02a-sitemap-p-500.jpg 500w, ../images/journey_02a-sitemap-p-800.jpg 800w, ../images/journey_02a-sitemap-p-1080.jpg 1080w, ../images/journey_02a-sitemap.jpg 1218w" alt="" class="case-img_journey"></div>
+              <div id="w-node-e7fd23ec-91fa-9d02-df26-ae6294e75daf-809dbaf1" class="case-img_block full"><img src="../images/journey_02b-sitemap.jpg" loading="lazy" sizes="(max-width: 479px) 29vw, (max-width: 767px) 28vw, (max-width: 991px) 24vw, 100vw" srcset="../images/journey_02b-sitemap-p-500.jpg 500w, ../images/journey_02b-sitemap.jpg 582w" alt="" class="case-img_journey"></div>
+              <div id="w-node-e7fd23ec-91fa-9d02-df26-ae6294e75db1-809dbaf1" class="case-img_block md"><img src="../images/journey_02c-sitemap.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+              <div id="w-node-e7fd23ec-91fa-9d02-df26-ae6294e75db3-809dbaf1" class="case-img_block"><img src="../images/journey_02d-sitemap.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+            </div>
+          </div>
+        </div>
+        <div class="case_column right journey-sticky">
+          <div class="case-img-collection_wrapper single">
+            <div class="case-img-collection_container grid single">
+              <div id="w-node-de37ab04-42cc-1449-8caa-19dc2b8359d9-809dbaf1" class="case-img_block full"><img src="../images/journey_02a-sitemap.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 24vw" srcset="../images/journey_02a-sitemap-p-500.jpg 500w, ../images/journey_02a-sitemap-p-800.jpg 800w, ../images/journey_02a-sitemap-p-1080.jpg 1080w, ../images/journey_02a-sitemap.jpg 1218w" alt="" class="case-img_journey"></div>
+              <div id="w-node-de37ab04-42cc-1449-8caa-19dc2b8359db-809dbaf1" class="case-img_block full"><img src="../images/journey_02b-sitemap.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 16vw" srcset="../images/journey_02b-sitemap-p-500.jpg 500w, ../images/journey_02b-sitemap.jpg 582w" alt="" class="case-img_journey"></div>
+              <div id="w-node-de37ab04-42cc-1449-8caa-19dc2b8359dd-809dbaf1" class="case-img_block md"><img src="../images/journey_02c-sitemap.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+              <div id="w-node-de37ab04-42cc-1449-8caa-19dc2b8359df-809dbaf1" class="case-img_block"><img src="../images/journey_02d-sitemap.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="case_container w-container">
+      <div class="case_grid img-row vertical">
+        <div class="case-img_wrapper journey space">
+          <div class="case-img_container journey"><img src="../images/journey_02.2a-sitemap.jpg" loading="lazy" alt="" class="case-img_journey zoom _2-1"></div>
+        </div>
+        <div class="case-img_wrapper journey space">
+          <div class="case-img_container journey"><img src="../images/journey_02.2b-sitemap.jpg" loading="lazy" alt="" class="case-img_journey zoom _2-2"></div>
+        </div>
+        <div class="case-img_wrapper journey last-space">
+          <div class="case-img_container journey"><img src="../images/journey_02.2c-sitemap.jpg" loading="lazy" alt="" class="case-img_journey zoom _2-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-w-id="7edfad12-29e6-3b1c-e12c-2fe908691d93" class="case_section journey-content">
+    <div class="case_container w-container">
+      <div class="case_grid title">
+        <div class="case_column left">
+          <div class="case-content_container sm">
+            <h3 class="case_typography-h3">Wireframes</h3>
+            <h4 class="case_typography-h4">Visualizing a blueprint</h4>
+          </div>
+        </div>
+        <div class="case_column right">
+          <div class="case-content_wrapper">
+            <div class="case-content_container sm">
+              <div class="case_typography-lgbody">The sitemap enabled us to design interactive wireframes representing a big-picture vision for the new customer experience platform.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="case_container journey w-container">
+      <div class="case_grid journey-sticky">
+        <div class="case_column left journey-sticky">
+          <div class="content_wrapper journey-sticky">
+            <div class="case_typography-body">These artifacts were foundations for building a simple, tailored, and intuitive experience.<br></div>
+            <div class="case_typography-body">They became living documents and accelerated the creation of the design language, components, and feature design.<br></div>
+          </div>
+          <div class="case-img-collection_wrapper-tablet">
+            <div class="case-img-collection_container grid single case-02_journey-03">
+              <div id="w-node-_648748dc-1825-41b1-7e42-ee8cfd8aeb4b-809dbaf1" class="case-img_block full"><img src="../images/journey_03a-wireframes.jpg" loading="lazy" sizes="(max-width: 767px) 57vw, (max-width: 991px) 49vw, 100vw" srcset="../images/journey_03a-wireframes-p-500.jpg 500w, ../images/journey_03a-wireframes-p-800.jpg 800w, ../images/journey_03a-wireframes-p-1080.jpg 1080w, ../images/journey_03a-wireframes.jpg 1152w" alt="" class="case-img_journey outline"></div>
+              <div id="w-node-_648748dc-1825-41b1-7e42-ee8cfd8aeb4d-809dbaf1" class="case-img_block md"><img src="../images/journey_03c-wireframes.jpg" loading="lazy" sizes="(max-width: 479px) 29vw, (max-width: 767px) 26vw, (max-width: 991px) 19vw, 100vw" srcset="../images/journey_03c-wireframes-p-500.jpg 500w, ../images/journey_03c-wireframes.jpg 708w" alt="" class="case-img_journey outline"></div>
+              <div id="w-node-_648748dc-1825-41b1-7e42-ee8cfd8aeb4f-809dbaf1" class="case-img_block md"><img src="../images/journey_03b-wireframes.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+            </div>
+          </div>
+        </div>
+        <div class="case_column right journey-sticky">
+          <div class="case-img-collection_wrapper single">
+            <div class="case-img-collection_container grid single">
+              <div id="w-node-_7edfad12-29e6-3b1c-e12c-2fe908691db8-809dbaf1" class="case-img_block full"><img src="../images/journey_03a-wireframes.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+              <div id="w-node-_7edfad12-29e6-3b1c-e12c-2fe908691dbc-809dbaf1" class="case-img_block md"><img src="../images/journey_03c-wireframes.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+              <div id="w-node-_7edfad12-29e6-3b1c-e12c-2fe908691dbe-809dbaf1" class="case-img_block sm"><img src="../images/journey_03b-wireframes.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="case_container w-container">
+      <div class="case_grid img-row">
+        <div class="case-img_wrapper journey space">
+          <div class="case-img_container journey"><img src="../images/journey_03.2a-wireframes.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-w-id="758b07ad-7eb8-5b60-d29f-7cdd37c5a540" class="case_section journey-content">
+    <div class="case_container w-container">
+      <div class="case_grid title">
+        <div class="case_column left">
+          <div class="case-content_container sm">
+            <h3 class="case_typography-h3">Visual design</h3>
+            <h4 class="case_typography-h4">Crafting reusable components</h4>
+          </div>
+        </div>
+        <div class="case_column right">
+          <div class="case-content_wrapper">
+            <div class="case-content_container sm">
+              <div class="case_typography-lgbody">During the wireframing stage, we also crafted visual design concepts in parallel. For design inspiration, I created a mood board and led product naming brainstorm sessions, which became Nutrien Edge.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="case_container journey w-container">
+      <div class="case_grid journey-sticky personas-content">
+        <div class="case_column left journey-sticky">
+          <div class="content_wrapper journey-sticky">
+            <div class="case_typography-body">Using the new visual design approach, I co-led a Figma design system where:<br></div>
+            <ul role="list" class="list">
+              <li class="case_typography-body">We applied atomic design principles to create designs with high craftsmanship.</li>
+              <li class="case_typography-body">We defined repeatable design patterns to accelerate design updates and idea validation.</li>
+              <li class="case_typography-body">We streamlined development across all products by defining a consistent design language with reusable components.</li>
+              <li class="case_typography-body">We created components that were easy to maintain as the product evolved.</li>
+            </ul>
+          </div>
+          <div class="case-img-collection_wrapper-tablet">
+            <div class="case-img-collection_container grid case-02_journey-04">
+              <div id="w-node-cc93602d-8155-e663-a3b8-ffa406369352-809dbaf1" class="case-img_block full"><img src="../images/journey_04a-designsystem.jpg" loading="lazy" sizes="(max-width: 479px) 57vw, (max-width: 767px) 56vw, (max-width: 991px) 41vw, 100vw" srcset="../images/journey_04a-designsystem-p-500.jpg 500w, ../images/journey_04a-designsystem-p-800.jpg 800w, ../images/journey_04a-designsystem-p-1080.jpg 1080w, ../images/journey_04a-designsystem.jpg 1422w" alt="" class="case-img_journey outline"></div>
+            </div>
+          </div>
+          <div class="content_wrapper journey-sticky">
+            <div class="case_typography-body">While working with sponsor users, I established clear and consistent content guidelines by consolidating terms across the legacy systems.<br></div>
+            <div class="case_typography-body">As we continued working on feature design, I helped track our progress to keep things organized.<br></div>
+          </div>
+          <div class="case-img-collection_wrapper-tablet">
+            <div class="case-img-collection_container grid case-02_journey-05">
+              <div id="w-node-a3253068-e341-f6e3-a309-e7fee94c81a9-809dbaf1" class="case-img_block full"><img src="../images/journey_05a-documents.jpg" loading="lazy" sizes="(max-width: 479px) 57vw, (max-width: 767px) 56vw, (max-width: 991px) 41vw, 100vw" srcset="../images/journey_05a-documents-p-500.jpg 500w, ../images/journey_05a-documents-p-800.jpg 800w, ../images/journey_05a-documents-p-1080.jpg 1080w, ../images/journey_05a-documents.jpg 1492w" alt="" class="case-img_journey outline"></div>
+              <div id="w-node-a3253068-e341-f6e3-a309-e7fee94c81ab-809dbaf1" class="case-img_block sm"><img src="../images/journey_05b-documents.jpg" loading="lazy" sizes="(max-width: 479px) 26vw, (max-width: 767px) 18vw, (max-width: 991px) 22vw, 100vw" srcset="../images/journey_05b-documents-p-500.jpg 500w, ../images/journey_05b-documents-p-800.jpg 800w, ../images/journey_05b-documents.jpg 872w" alt="" class="case-img_journey outline"></div>
+            </div>
+          </div>
+          <div class="content_wrapper journey-sticky">
+            <div class="case_typography-body">I also coordinated with frontend developers by mapping component design progress with corresponding features, creating the design system by adapting the Material UI library, and setting up design system foundations on Storybook.</div>
+            <div class="case_typography-body">This expedited design system implementation, increasing efficiency when developing features.</div>
+          </div>
+          <div class="case-img-collection_wrapper-tablet">
+            <div class="case-img-collection_container grid case-02_journey-06">
+              <div id="w-node-_3404abdd-0c57-b5fc-9461-09f9af61760e-809dbaf1" class="case-img_block full"><img src="../images/journey_06a-designsystemdoc.jpg" loading="lazy" sizes="(max-width: 479px) 57vw, (max-width: 767px) 56vw, (max-width: 991px) 41vw, 100vw" srcset="../images/journey_06a-designsystemdoc-p-500.jpg 500w, ../images/journey_06a-designsystemdoc-p-800.jpg 800w, ../images/journey_06a-designsystemdoc-p-1080.jpg 1080w, ../images/journey_06a-designsystemdoc.jpg 1328w" alt="" class="case-img_journey"></div>
+            </div>
+          </div>
+        </div>
+        <div class="case_column right journey-sticky">
+          <div class="case-img-collection_wrapper case-02_journey-04">
+            <div class="case-img-collection_container grid">
+              <div id="w-node-_96b513fa-f96b-5725-e4b3-bfec9cda0ff1-809dbaf1" class="case-img_block full"><img src="../images/journey_04a-designsystem.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+            </div>
+          </div>
+          <div class="case-img-collection_wrapper case-02_journey-05">
+            <div class="case-img-collection_container grid">
+              <div id="w-node-_4dfb96c7-0063-db0c-08cf-fa46b00b07d8-809dbaf1" class="case-img_block full"><img src="../images/journey_05a-documents.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+              <div id="w-node-_4dfb96c7-0063-db0c-08cf-fa46b00b07de-809dbaf1" class="case-img_block sm"><img src="../images/journey_05b-documents.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+            </div>
+          </div>
+          <div class="case-img-collection_wrapper case-02_journey-06">
+            <div class="case-img-collection_container grid">
+              <div id="w-node-a8c84348-0101-31eb-556d-33b0908b7e2e-809dbaf1" class="case-img_block full"><img src="../images/journey_06a-designsystemdoc.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="case_grid quote">
+        <div class="case_column left sticky"></div>
+        <div class="case_column right">
+          <div class="case-quote_container sm-space w-clearfix">
+            <div class="decoration-wrapper"><img loading="lazy" src="../images/quotation_1quotation.png" alt="" class="decoration"></div>
+            <div class="case_typography-body quote-emphasis">Carrie can take a systematic approach to UX and UI design, champion best practices and educate the client. The efforts she put towards guiding the client to setup their design system was well appreciated by both the client and our team.<br><br>Carrie also took the initiative to go above and beyond basic client requests and suggested areas of consideration such as creating content guidelines, all of which contributed to the overall success of our project.</div>
+            <div class="case-name_container">
+              <p class="case_typography-caption bold">Huiwen Ji, Collaborator</p>
+              <p class="case_typography-caption">Senior UX &amp; UI Designer at IBM iX</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-w-id="e63a15b9-7c6e-7fef-27a6-1ec6969d7285" class="case_section journey-content">
+    <div class="case_container w-container">
+      <div class="case_grid title no-col">
+        <div class="content_wrapper">
+          <h2 class="case_typography-h2">delivery phase</h2>
+        </div>
+      </div>
+    </div>
+    <div class="case_container journey w-container">
+      <div class="case_grid journey-sticky prioritization-content">
+        <div class="case_column left journey-sticky">
+          <div class="content_wrapper journey-sticky">
+            <div class="case_typography-body">Three pairs of product designers and business analysts concurrently worked on 10+ features, identifying design requirements, user tasks, and content</div>
+            <div class="case_typography-body">We obtained user insights and documents through sponsor user discussions, legacy system features, and the digital customer experience strategy.</div>
+          </div>
+          <div class="case-img-collection_wrapper-tablet">
+            <div class="case-img-collection_container grid case-02_journey-07">
+              <div id="w-node-bc0e1c05-693e-fd64-0179-248b968be72b-809dbaf1" class="case-img_block full"><img src="../images/journey_07a-legacy.jpg" loading="lazy" sizes="(max-width: 479px) 57vw, (max-width: 767px) 56vw, (max-width: 991px) 41vw, 100vw" srcset="../images/journey_07a-legacy-p-500.jpg 500w, ../images/journey_07a-legacy.jpg 784w" alt="" class="case-img_journey outline"></div>
+              <div id="w-node-bc0e1c05-693e-fd64-0179-248b968be72d-809dbaf1" class="case-img_block full"><img src="../images/journey_07c-legacy.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+              <div id="w-node-bc0e1c05-693e-fd64-0179-248b968be72f-809dbaf1" class="case-img_block sm"><img src="../images/journey_07e-legacy.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+              <div id="w-node-bc0e1c05-693e-fd64-0179-248b968be731-809dbaf1" class="case-img_block md"><img src="../images/journey_07d-legacy.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+            </div>
+          </div>
+          <div class="content_wrapper journey-sticky">
+            <div class="case_typography-body">We started designing wireframes to determine whether features could address users’ needs.</div>
+            <div class="case_typography-body">As feature design continued, we designed design system components to accelerate the creation of high-fidelity prototypes with interactive elements, system messages, and responsive behaviours.</div>
+          </div>
+          <div class="case-img-collection_wrapper-tablet">
+            <div class="case-img-collection_container grid case-02_journey-08">
+              <div id="w-node-_1890d532-8bde-4da3-9cab-fc2928d631e8-809dbaf1" class="case-img_block md"><img src="../images/journey_08a-sketch.jpg" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 40vw, (max-width: 991px) 29vw, 100vw" srcset="../images/journey_08a-sketch-p-500.jpg 500w, ../images/journey_08a-sketch.jpg 580w" alt="" class="case-img_journey"></div>
+              <div id="w-node-_1890d532-8bde-4da3-9cab-fc2928d631ea-809dbaf1" class="case-img_block lg"><img src="../images/journey_08b-wireframes.jpg" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 36vw, (max-width: 991px) 33vw, 100vw" srcset="../images/journey_08b-wireframes-p-500.jpg 500w, ../images/journey_08b-wireframes-p-800.jpg 800w, ../images/journey_08b-wireframes.jpg 876w" alt="" class="case-img_journey outline"></div>
+              <div id="w-node-_1890d532-8bde-4da3-9cab-fc2928d631ec-809dbaf1" class="case-img_block xl"><img src="../images/journey_08c-wireframes.jpg" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 38vw, (max-width: 991px) 35vw, 100vw" srcset="../images/journey_08c-wireframes-p-500.jpg 500w, ../images/journey_08c-wireframes-p-800.jpg 800w, ../images/journey_08c-wireframes.jpg 824w" alt="" class="case-img_journey outline"></div>
+              <div id="w-node-_1890d532-8bde-4da3-9cab-fc2928d631ee-809dbaf1" class="case-img_block full"><img src="../images/journey_08d-sketch.jpg" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 42vw, (max-width: 991px) 37vw, 100vw" srcset="../images/journey_08d-sketch-p-500.jpg 500w, ../images/journey_08d-sketch-p-800.jpg 800w, ../images/journey_08d-sketch.jpg 1028w" alt="" class="case-img_journey"></div>
+            </div>
+          </div>
+          <div class="content_wrapper journey-sticky">
+            <div class="case_typography-body">We shared work-in-progress and design pattern ideas in daily team meetings, conducted guerrilla testing with sponsor users, and presented weekly product demos to stakeholders. <br></div>
+            <div class="case_typography-body">As the project progressed, we refined the MVP definition by improving designs, storytelling ability, and stakeholder feedback quality.</div>
+          </div>
+          <div class="case-img-collection_wrapper-tablet">
+            <div class="case-img-collection_wrapper case-02_journey-09">
+              <div class="case-img-collection_container grid case-02_journey-09">
+                <div id="w-node-_6a44730b-6844-fc90-1945-5961c1f7ac6f-809dbaf1" class="case-img_block full"><img src="../images/journey_09a-app.jpg" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 47vw, (max-width: 991px) 41vw, 100vw" srcset="../images/journey_09a-app-p-500.jpg 500w, ../images/journey_09a-app-p-800.jpg 800w, ../images/journey_09a-app-p-1080.jpg 1080w, ../images/journey_09a-app-p-1600.jpg 1600w, ../images/journey_09a-app.jpg 1672w" alt="" class="case-img_journey outline"></div>
+                <div id="w-node-_6a44730b-6844-fc90-1945-5961c1f7ac71-809dbaf1" class="case-img_block md"><img src="../images/journey_09c-app.jpg" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 36vw, (max-width: 991px) 26vw, 100vw" srcset="../images/journey_09c-app-p-500.jpg 500w, ../images/journey_09c-app-p-800.jpg 800w, ../images/journey_09c-app-p-1080.jpg 1080w, ../images/journey_09c-app.jpg 1186w" alt="" class="case-img_journey outline"></div>
+                <div id="w-node-_6a44730b-6844-fc90-1945-5961c1f7ac73-809dbaf1" class="case-img_block sm"><img src="https://uploads-ssl.webflow.com/641dd6de9511710d3d9b3089/645139c7d43f611feb46d3ce_journey_09b-app.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="case_column right journey-sticky">
+          <div class="case-img-collection_wrapper case-02_journey-07">
+            <div class="case-img-collection_container grid case-02_journey-07">
+              <div id="w-node-_7179129a-423e-ee1c-54b3-2a7241472e4f-809dbaf1" class="case-img_block full"><img src="../images/journey_07a-legacy.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 23vw" srcset="../images/journey_07a-legacy-p-500.jpg 500w, ../images/journey_07a-legacy.jpg 784w" alt="" class="case-img_journey outline"></div>
+              <div id="w-node-eb235750-dd0a-e43f-95ed-2d6d671d20c9-809dbaf1" class="case-img_block full"><img src="../images/journey_07c-legacy.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+              <div id="w-node-_7179129a-423e-ee1c-54b3-2a7241472e51-809dbaf1" class="case-img_block sm"><img src="../images/journey_07e-legacy.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+              <div id="w-node-_7179129a-423e-ee1c-54b3-2a7241472e53-809dbaf1" class="case-img_block md"><img src="../images/journey_07d-legacy.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+            </div>
+          </div>
+          <div class="case-img-collection_wrapper case-02_journey-08">
+            <div class="case-img-collection_container grid case-02_journey-08">
+              <div id="w-node-_3562e5b4-565d-a8a6-4112-55511fe60250-809dbaf1" class="case-img_block md"><img src="../images/journey_08a-sketch.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+              <div id="w-node-_3562e5b4-565d-a8a6-4112-55511fe60252-809dbaf1" class="case-img_block lg"><img src="../images/journey_08b-wireframes.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+              <div id="w-node-_3562e5b4-565d-a8a6-4112-55511fe60254-809dbaf1" class="case-img_block xl"><img src="../images/journey_08c-wireframes.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+              <div id="w-node-_3562e5b4-565d-a8a6-4112-55511fe60256-809dbaf1" class="case-img_block full"><img src="../images/journey_08d-sketch.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+            </div>
+          </div>
+          <div class="case-img-collection_wrapper case-02_journey-09">
+            <div class="case-img-collection_container grid case-02_journey-09">
+              <div id="w-node-bf512dfe-e84a-32f7-5bea-dc479b37e211-809dbaf1" class="case-img_block xl"><img src="../images/journey_09a-app.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+              <div id="w-node-bf512dfe-e84a-32f7-5bea-dc479b37e213-809dbaf1" class="case-img_block md"><img src="../images/journey_09c-app.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+              <div id="w-node-bf512dfe-e84a-32f7-5bea-dc479b37e215-809dbaf1" class="case-img_block sm"><img src="../images/journey_09b-app.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="case_grid img-row vertical">
+        <div class="case-img_wrapper journey space">
+          <div class="case-img_container journey"><img src="../images/outcomes_01a-designsystem.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+        </div>
+        <div class="case-img_wrapper journey space">
+          <div class="case-img_container journey"><img src="../images/outcomes_02a-invoices-flow.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+        </div>
+        <div class="case-img_wrapper journey last-space">
+          <div class="case-img_container journey"><img src="../images/outcomes_02b-warehouses-flow.jpg" loading="lazy" alt="" class="case-img_journey outline"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-w-id="61fc3c80-ce0a-cb0e-3edd-990abcb08f1b" class="case_section on-dark solution-content">
+    <div class="case_container w-container">
+      <div class="case_grid title no-col">
+        <div class="content_wrapper">
+          <h2 class="case_typography-h2 on-dark">solution</h2>
+        </div>
+      </div>
+      <div class="case_grid solution-sticky">
+        <div class="case_column sticky-img left">
+          <div class="content_wrapper sticky-img">
+            <h3 class="case_typography-h3 on-dark">Know who customers are</h3>
+            <div class="case-content_container">
+              <div class="case_typography-body on-dark"><span class="case_typography-body-bold">Problem</span>: Customers frequently call to obtain account information from customer success over email or fax. This requires a lot of manual effort, as information is dispersed across multiple documents and outdated systems.</div>
+              <div class="case_typography-body on-dark">Customers need to stay on top of their business with a snapshot of their accounts to understand their orders, history, and invoices.</div>
+              <div class="case_typography-body on-dark"><span class="case_typography-body-bold-color-on-dark">“Any information that we can get at our fingertips, at some point is going to be helpful. It may not be used every day, but there will be a time when we’ll need it. The more info we can get to, the better”</span> - Product Manager</div>
+            </div>
+          </div>
+          <div class="case-img_block-tablet no-shadow"><img src="../images/solution_01a-problem.jpg" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 79vw, (max-width: 991px) 64vw, 100vw" srcset="../images/solution_01a-problem-p-500.jpg 500w, ../images/solution_01a-problem-p-800.jpg 800w, ../images/solution_01a-problem-p-1080.jpg 1080w, ../images/solution_01a-problem-p-1600.jpg 1600w, ../images/solution_01a-problem.jpg 1945w" alt="" class="case-img_journey"></div>
+          <div class="content_wrapper sticky-img">
+            <h3 class="case_typography-h3 on-dark">Know who customers are</h3>
+            <div class="case-content_container">
+              <div class="case_typography-body on-dark"><span class="case_typography-body-bold">Solution</span>: As the invoicing design lead, I collaborated with sponsor users and the orders design lead to centralize frequently-used documents.</div>
+              <div class="case_typography-body on-dark">This enabled users like Andrew to manage budgets, identify trends, and update accounts with timely and accurate payments.</div>
+              <div class="case_typography-body on-dark">We also shared several features, including:</div>
+              <ul role="list" class="list on-dark">
+                <li class="case_typography-body-list-on-dark">Access documents with robust search, sort, and filter options</li>
+                <li class="case_typography-body-list-on-dark">Track new invoices and upcoming due dates</li>
+                <li class="case_typography-body-list-on-dark">Browse orders and invoices with associated payments, deliveries, and documents</li>
+              </ul>
+            </div>
+          </div>
+          <div class="case-img_block-tablet no-shadow"><img src="https://uploads-ssl.webflow.com/641dd6de9511710d3d9b3089/64514621effdb976cfc796cf_solution_01b-solution.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+          <div class="content_wrapper sticky-img">
+            <h3 class="case_typography-h3 on-dark">Keep customers informed</h3>
+            <div class="case-content_container">
+              <div class="case_typography-body on-dark"><span class="case_typography-body-bold">Problem</span>: Customers lack up-to-date information on product inventory levels and feel left in the dark when delivery issues occur.</div>
+              <div class="case_typography-body on-dark">Customers want to run their operations smoothly by tracking their warehouse logistics and product orders.</div>
+              <div class="case_typography-body on-dark"><span class="case_typography-body-bold-color-on-dark">“The more we can get automated and the more we have visibility to real-time inventory or inventory in transit, that’s probably where I see the opportunities.”</span> - Product Inventory and Procurement Manager</div>
+            </div>
+          </div>
+          <div class="case-img_block-tablet no-shadow"><img src="../images/solution_02a-problem.jpg" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 79vw, (max-width: 991px) 64vw, 100vw" srcset="../images/solution_02a-problem-p-500.jpg 500w, ../images/solution_02a-problem-p-800.jpg 800w, ../images/solution_02a-problem-p-1080.jpg 1080w, ../images/solution_02a-problem-p-1600.jpg 1600w, ../images/solution_02a-problem.jpg 1945w" alt="" class="case-img_journey"></div>
+          <div class="content_wrapper sticky-img">
+            <h3 class="case_typography-h3 on-dark">Keep customers informed</h3>
+            <div class="case-content_container">
+              <div class="case_typography-body on-dark"><span class="case_typography-body-bold">Solution</span>: As the warehouses design lead, I collaborated with cross-functional subject matter experts and stakeholders and designed solutions to ensure Nutrien keeps up with product demand and maintains adequate stock.</div>
+              <div class="case_typography-body on-dark">We helped users like Len maintain product inventory levels and track shipments across several warehouses with the following features:</div>
+              <ul role="list" class="list on-dark">
+                <li class="case_typography-body-list-on-dark">Obtain warehouse details at-a-glance with updated product inventory levels</li>
+                <li class="case_typography-body-list-on-dark">Customize warehouse preferences with robust search, sort, filter, and favorite options</li>
+                <li class="case_typography-body-list-on-dark">View product order availability and incoming shipments</li>
+              </ul>
+            </div>
+          </div>
+          <div class="case-img_block-tablet no-shadow"><img src="https://uploads-ssl.webflow.com/641dd6de9511710d3d9b3089/6451462190f9b4041f560c72_solution_02b-solution.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+          <div class="content_wrapper sticky-img">
+            <h3 class="case_typography-h3 on-dark">Enable customer access</h3>
+            <div class="case-content_container">
+              <div class="case_typography-body on-dark"><span class="case_typography-body-bold">Problem</span>: Customers rely on human-to-human interactions with Nutrien to address simple tasks, waiting for assistance instead of running their business.</div>
+              <div class="case_typography-body on-dark">Customers want to be self-sufficient while on-the-go to complete tasks such as order requests, changes, and cancellations.</div>
+              <div class="case_typography-body on-dark"><span class="case_typography-body-bold-color-on-dark">“With fertilizer, you’re not working a 9-5 job. We always try to think ahead but don’t always have that ability. Being able to get those services established outside of business hours is really a need.”</span> - Product Logistics Coordinator</div>
+            </div>
+          </div>
+          <div class="case-img_block-tablet no-shadow"><img src="../images/solution_03a-problem.jpg" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 79vw, (max-width: 991px) 64vw, 100vw" srcset="../images/solution_03a-problem-p-500.jpg 500w, ../images/solution_03a-problem-p-800.jpg 800w, ../images/solution_03a-problem-p-1080.jpg 1080w, ../images/solution_03a-problem-p-1600.jpg 1600w, ../images/solution_03a-problem.jpg 1945w" alt="" class="case-img_journey"></div>
+          <div class="content_wrapper sticky-img">
+            <h3 class="case_typography-h3 on-dark">Enable customer access</h3>
+            <div class="case-content_container">
+              <div class="case_typography-body on-dark"><span class="case_typography-body-bold">Solution</span>: This highly-requested feature was new to Nutrien’s infrastructure and required several refinements to map the entire workflow.</div>
+              <div class="case_typography-body on-dark">We helped users like Len easily manage products and customer deliveries with the following features:</div>
+              <ul role="list" class="list on-dark">
+                <li class="case_typography-body-list-on-dark">Order products to customer warehouses</li>
+                <li class="case_typography-body-list-on-dark">Track incoming product deliveries</li>
+                <li class="case_typography-body-list-on-dark">Reminders when delays or low product inventory levels occurs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="case-img_block-tablet no-shadow"><img src="https://uploads-ssl.webflow.com/641dd6de9511710d3d9b3089/64514622f8dad47cf6b8b29e_solution_03b-solution.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+        </div>
+        <div class="case_column sticky-img right">
+          <div class="case-img-single_wrapper solution sticky-img">
+            <div id="w-node-_57fab48c-9f73-b900-217d-0087fa5b90b9-809dbaf1" class="case-img_block sticky-img case-02_6"><img src="../images/solution_01a-problem.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+            <div id="w-node-_353e5b06-30eb-f781-d7da-46a0a29c6be6-809dbaf1" class="case-img_block sticky-img case-02_5"><img src="../images/solution_01b-solution.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+            <div class="case-img_block sticky-img case-02_4"><img src="../images/solution_02a-problem.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+            <div class="case-img_block sticky-img case-02_3"><img src="../images/solution_02b-solution.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+            <div class="case-img_block sticky-img case-02_2"><img src="../images/solution_03a-problem.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+            <div class="case-img_block sticky-img case-02_1"><img src="../images/solution_03b-solution.jpg" loading="lazy" alt="" class="case-img_journey"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="case_section on-light outcomes-content">
+    <div class="case_container w-container">
+      <div class="case_grid sticky-title">
+        <div class="case_column left">
+          <div class="content_wrapper">
+            <h2 class="case_typography-h2">Outcomes</h2>
+          </div>
+        </div>
+        <div class="case_column right">
+          <div class="case-content_wrapper">
+            <div class="case-content_container">
+              <div class="case_typography-body">During initial product reveals, customers and sponsor users shared excitement and expressed anticipation over a new digital customer experience platform that puts customers first.</div>
+              <div class="case_typography-body">A <span class="case_typography-body-bold">simple and clear</span> design, empowers customers to stay on top of their business with complete control over their account and shipment information.</div>
+              <div class="case_typography-body">A <span class="case_typography-body-bold">flexible and tailored</span> experience informs customers with up-to-date information, interruption alerts, and shipment tracking. They can customize their experience to manage logistics, strategize operations, and resolve issues.</div>
+              <div class="case_typography-body">An <span class="case_typography-body-bold">intuitive and seamless</span> platform gives customers a consistent experience to easily self-serve on-the-go to complete tasks and workflow management, including ordering products.</div>
+              <div class="case_typography-body">Customers have on-demand, self-serve access to account and product information. During presentations, stakeholders felt engaged and involved in the user-centric design process.</div>
+            </div>
+          </div>
+          <div class="case-content_wrapper">
+            <div class="case-quote_container w-clearfix">
+              <div class="decoration-wrapper"><img loading="lazy" src="../images/quotation_1quotation.png" alt="" class="decoration"></div>
+              <div class="case_typography-body quote-emphasis">Carrie&#x27;s collaborative style and interest in the client&#x27;s and users’ experiences really helped the project team to work better as one team, despite many challenges. She managed to influence the client with actions and active participation beyond her design role - she was the glue that kept the diverse teams on the project together!</div>
+              <div class="case-name_container">
+                <p class="case_typography-caption bold">Elmien Dicker, Account Partner</p>
+                <p class="case_typography-caption">Executive Consultant at IBM iX</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="case_section reflection-content">
+    <div class="case_container w-container">
+      <div class="case_grid sticky-title">
+        <div class="case_column left">
+          <div class="content_wrapper">
+            <h2 class="case_typography-h2">Reflection</h2>
+          </div>
+        </div>
+        <div class="case_column right">
+          <div class="case-content_wrapper">
+            <div class="case-content_container">
+              <div class="case_typography-body">Not everything went according to plan, but we did the best we could with the resources we had.</div>
+            </div>
+            <div class="case-content_container sm">
+              <h4 class="case_typography-h4">Juggling several moving parts</h4>
+              <div class="case_typography-body">Project beginnings felt like a slow start, as we invited everyone to share product knowledge and align on goals. When waiting for stakeholders to make critical decisions for project advancement, we focused on the design system that would help accelerate design and development.</div>
+            </div>
+            <div class="case-content_container sm">
+              <h4 class="case_typography-h4">Leveraging existing resources</h4>
+              <div class="case_typography-body">With limited customer access, we relied on sponsor users to gather requirements and conduct guerrilla tests. We presented work-in-progress in early feedback sessions but realized sponsor users expected higher-fidelity work. We adjusted our collaboration approach, prioritized design system development, and learned how to set expectations with sponsor users.</div>
+            </div>
+            <div class="case-content_container sm">
+              <h4 class="case_typography-h4">Designing with technical limitations</h4>
+              <div class="case-content_container">
+                <div class="case_typography-body">The resources required to phase out legacy systems led to the team postponing user-requested feature ideation and fully-designed feature development.</div>
+                <div class="case_typography-body">We could have explored incremental feature development on top of existing infrastructure, as teams have done so from Dropbox, Intuit, and American Express. With a product release, we could track metrics, address user feedback, and capitalize on the momentum gained from product demos.</div>
+                <div class="case_typography-body">Despite the situation, the project succeeded with a new design for a digital platform that received positive user reactions. We anticipated improvements in customer retention, lifetime value, acquisition costs, task completion rate, and inquiry resolution time.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="case_section testimonials-content">
+    <div class="case_container w-container">
+      <div class="case_grid sticky-title">
+        <div class="case_column left sticky">
+          <div class="content_wrapper">
+            <h2 class="case_typography-h2">Kind words</h2>
+          </div>
+        </div>
+        <div class="case_column right">
+          <div class="case-content_wrapper">
+            <div class="case-content_container">
+              <div class="case_typography-body">Feedback on my contributions from talented team members who I had the pleasure of working with.<br></div>
+            </div>
+          </div>
+          <div class="case-content_wrapper">
+            <div class="case-quote_container w-clearfix">
+              <div class="decoration-wrapper"><img loading="lazy" src="../images/quotation_1quotation.png" alt="" class="decoration"></div>
+              <div class="case_typography-body quote-emphasis">Carrie’s growth journey as a designer was impressive, both at the UX and UI level. Carrie was confident and trusted enough to lead some UX work streams for various parts of the project independently and directly with client stakeholders.</div>
+              <div class="case-name_container">
+                <p class="case_typography-caption bold">Elmien Dicker, Account Partner</p>
+                <p class="case_typography-caption">Associate Partner at IBM iX</p>
+              </div>
+            </div>
+          </div>
+          <div class="case-content_wrapper">
+            <div class="case-quote_container w-clearfix">
+              <div class="decoration-wrapper"><img loading="lazy" src="../images/quotation_1quotation.png" alt="" class="decoration"></div>
+              <div class="case_typography-body quote-emphasis">Carrie is always such a delight to work with, and we were very fortunate to have her on our team. Overall, it has been an absolute pleasure working with her at Nutrien.</div>
+              <div class="case-name_container">
+                <p class="case_typography-caption bold">Huiwen Ji, Collaborator</p>
+                <p class="case_typography-caption">Senior UX &amp; UI Designer at IBM iX</p>
+              </div>
+            </div>
+          </div>
+          <div class="case-content_wrapper">
+            <div class="case-quote_container w-clearfix">
+              <div class="decoration-wrapper"><img loading="lazy" src="../images/quotation_1quotation.png" alt="" class="decoration"></div>
+              <div class="case_typography-body quote-emphasis">Carrie’s work with Nutrien has always been nothing short of brilliant.</div>
+              <div class="case-name_container">
+                <p class="case_typography-caption bold">Bill Sykes, Account Executive</p>
+                <p class="case_typography-caption">Business Development Executive at IBM</p>
+              </div>
+            </div>
+          </div>
+          <div class="case-content_wrapper team-content">
+            <div class="case-content_container xs">
+              <h5 class="case_typography-h5">Key project contributors</h5>
+              <div class="case_typography-body"><span class="case_typography-body-bold-alt">Thi Vo</span>, UX Design Lead<br><span class="case_typography-body-bold-alt">Huiwen Ji</span>, Product Designer<br><span class="case_typography-body-bold-alt">Felipe Kajimoto</span>, Business Analyst<br><span class="case_typography-body-bold-alt">Vincent Brunelle</span>, Business Analyst<br><span class="case_typography-body-bold-alt">Andrew Dewar</span>, Frontend Developer<br><span class="case_typography-body-bold-alt">Patrick Czeczko</span>, Frontend Developer<br><span class="case_typography-body-bold-alt">Stevie Wilson</span>, Product Manager<br><span class="case_typography-body-bold-alt">Abdel Boufroura</span>, Lead Architect<br><span class="case_typography-body-bold-alt">Brian Lofvendahl</span>, Technical Architect<br><span class="case_typography-body-bold-alt">Elmien Dicker</span>, Account Partner<br></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="case_section on-light">
+    <div class="case_container w-container">
+      <div class="case_grid next-project">
+        <div class="case_column left sticky">
+          <div class="content_wrapper">
+            <h2 class="case_typography-h2">next project</h2>
+          </div>
+        </div>
+        <div class="case_column right">
+          <div class="case-content_wrapper">
+            <div class="case-content_container">
+              <div class="case_primary-btn-wrapper primary">
+                <div data-w-id="f34c541c-8333-22a6-433a-d4612080a390" class="btn-shadow">
+                  <a style="-webkit-transform:translate3d(-8PX, -8PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-8PX, -8PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-8PX, -8PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-8PX, -8PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="../works/nutrien-strategy.html" class="button w-button">Nutrien strategy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=641dd6de9511710d3d9b3089" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="../js/webflow.js" type="text/javascript"></script>
+</body>
+</html>
